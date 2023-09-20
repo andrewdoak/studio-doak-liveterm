@@ -1,5 +1,5 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
+  "readmeUrl": "https://github.com/andrewdoak/doak.studio",
   "title": "DOAK.STUDIO",
   "name": "Andrew Doak",
   "ascii": "doak.studio",
@@ -10,7 +10,7 @@
   "email": "mrandrewdoak@gmail.com",
   "ps1_hostname": "doak.studio",
   "ps1_username": "honored_guest",
-  "repo": "https://github.com/andrewdoak",
+  "repo": "https://github.com/andrewdoak/doakstudios-liveterm",
   "resume_url": "https://github.com/andrewdoak/doak.studio/blob/main/andrew-doak_resume.pdf",
   "donate_urls": {
     "paypal": "https://paypal.me/thedoak",

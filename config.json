@@ -9,13 +9,13 @@
   },
   "email": "mrandrewdoak@gmail.com",
   "ps1_hostname": "doak.studio",
-  "ps1_username": "guest",
+  "ps1_username": "honored_guest",
   "repo": "https://github.com/andrewdoak",
   "resume_url": "https://github.com/andrewdoak/doak.studio/blob/main/andrew-doak_resume.pdf",
   "donate_urls": {
     "paypal": "https://paypal.me/thedoak",
     "cashapp": "https://cash.app/$thedoak",
-    "patreon": "https://patreon.com/cveinnt"
+    "patreon": "https://patreon.com"
   },
   "colors": {
     "light": {

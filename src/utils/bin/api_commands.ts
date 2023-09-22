@@ -5,6 +5,7 @@ import { getQuote } from '../api';
 import { getReadme } from '../api';
 import { getWeather } from '../api';
 
+// GitHub Projects (all)
 export const projects = async (args: string[]): Promise<string> => {
   const projects = await getProjects();
   return projects
@@ -22,14 +23,15 @@ export const quote = async (args: string[]): Promise<string> => {
 
 export const readme = async (args: string[]): Promise<string> => {
   const readme = await getReadme();
-  return `Opening GitHub README...\n
-  ${readme}`;
+  return `opening github readme...\n
+${readme}`;
 };
 
 export const weather = async (args: string[]): Promise<string> => {
   const city = args.join('+');
   if (!city) {
-    return 'Usage: weather [city]. Example: weather casablanca';
+    return `usage: weather [city]. 
+example: weather casablanca`;
   }
   const weather = await getWeather(city);
   return weather;

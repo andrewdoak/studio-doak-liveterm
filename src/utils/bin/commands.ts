@@ -27,31 +27,40 @@ Type 'sumfetch' to display summary.
 // Repo
 export const repo = async (args: string[]): Promise<string> => {
   window.open(`${config.repo}`);
-  return 'Opening Github repo in a new tab...';
+  return `opening this site's repo in a new tab...`;
 };
 
 // AboutMe
 export const about = async (args: string[]): Promise<string> => {
   return `Hi! I'm ${config.name}. Thanks for stopping by!
+For more about me, try the following commands...
 
-For more about me, type...
 'sumfetch' - for a short summary.
+'readme' - for my github readme.
 'resume' - for my latest resume.
-'readme' - for my github readme.`;
+'gui' - or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.gui_url}" target="_blank">here</a></u> for a traditional site. 
+`;
+};
+
+// gui (static site)
+export const gui = async (args: string[]): Promise<string> => {
+  window.open(`${config.gui_url}`);
+
+  return `opening gui site...`;
 };
 
 // Resume
 export const resume = async (args: string[]): Promise<string> => {
   window.open(`${config.resume_url}`);
-  return 'Opening resume...';
+  return 'opening resume...';
 };
 
 // Donate
 export const donate = async (args: string[]): Promise<string> => {
-  return `thanks for thinking of me!
-i'm so grateful for your support:
+  return `i'm so grateful for your support :)
+
 - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
+- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.cashapp}" target="_blank">cashapp</a></u>
 `;
 };
 
@@ -182,13 +191,15 @@ export const banner = (args?: string[]): string => {
   ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║
   ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
   ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ 
+  
+  (<u><a class="text-light-blue dark:text-dark-blue underline" href="${config.gui_url}" target="_blank">${config.gui_name}</a></u>)
                                                 
-type 'help' to see the list of available commands.
-type 'sumfetch' to display summary.
-type 'repo' for this site's repo.
+  type 'help' to see the list of available commands.
+  type 'sumfetch' to display summary.
+  type 'gui' or click above for a traditional web presence.
 
-doak.studio stands on the shoulders of LiveTerm.
-thank you, LiveTerm!
-<u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">LiveTerm's</a></u> repo. 
+  type 'repo' for this site's repo.
+  doak.studio stands on the shoulders of <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo_liveterm}" target="_blank">liveterm</a></u>
+  thank you, liveterm! 
 `;
 };

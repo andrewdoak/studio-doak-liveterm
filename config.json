@@ -3,35 +3,46 @@
   "title": "DOAK.STUDIO",
   "name": "Andrew Doak",
   "ascii": "doak.studio",
+  "gui_url": "https://bio.site/doak.studio",
+  "gui_name": "doak.studio",
   "social": {
     "github": "andrewdoak",
     "linkedin": "doak-andrew"
   },
   "email": "mrandrewdoak@gmail.com",
   "ps1_hostname": "doak.studio",
-  "ps1_username": "honored_guest",
+  "ps1_username": "honored-guest",
   "repo": "https://github.com/andrewdoak/doakstudios-liveterm",
+  "repo_liveterm": "https://github.com/Cveinnt/LiveTerm",
   "resume_url": "https://github.com/andrewdoak/doak.studio/blob/main/andrew-doak_resume.pdf",
   "donate_urls": {
     "paypal": "https://paypal.me/thedoak",
     "cashapp": "https://cash.app/$thedoak",
     "patreon": "https://patreon.com"
   },
+  "projects": {
+    "project1_name": "game_match-the-number",
+    "project1_github": "https://github.com/andrewdoak/p5js-matching-game",
+    "project1_live": "https://andrewdoak.github.io/p5js-matching-game/",
+    "project2_name": "react-app_virtual-museum",
+    "project2_github": "https://github.com/andrewdoak/aic-api-react",
+    "project2_live": "https://aic-api-react.netlify.app/"
+  },
   "colors": {
     "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
-      "yellow": "#D79921",
-      "green": "#98971A",
+      "background": "#ffcfc4",
+      "foreground": "#000831",
+      "yellow": "#ff616b",
+      "green": "#23c17c",
       "gray": "#7C6F64",
       "blue": "#458588",
       "red": "#CA2124"
     },
     "dark": {
-      "background": "#2E3440",
-      "foreground": "#E5E9F0",
-      "yellow": "#5E81AC",
-      "green": "#A3BE8C",
+      "background": "#000831",
+      "foreground": "#FFCFC4",
+      "yellow": "#ff616b",
+      "green": "#80ffcc",
       "gray": "#88C0D0",
       "blue": "#EBCB8B",
       "red": "#BF616A"

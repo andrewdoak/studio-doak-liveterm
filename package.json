@@ -1,11 +1,11 @@
 {
-  "name": "liveterm",
-  "version": "0.1.0",
+  "name": "liveterm.doak.studio",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
-    "name": "Vincent Wu",
-    "url": "https://cveinnt.com",
-    "email": "contact@wensenwu.com"
+    "name": "Andrew Doak",
+    "url": "https://bio.site/doak.studio",
+    "email": "thedoak@gmail.com"
   },
   "scripts": {
     "dev": "next dev",

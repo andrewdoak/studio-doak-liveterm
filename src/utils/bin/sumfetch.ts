@@ -2,22 +2,45 @@ import config from '../../../config.json';
 
 const sumfetch = async (args: string[]): Promise<string> => {
   return `
-           ▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▄                  sumfetch
-        ▄▓▓▀ ▄▓▓▀▓▓▓▀▓▓▄ ▀▀▓▓▄              -----------
-      ▓▓▀  ▄▓▀   ▐▓▓  ▀▓▓    ▓▓▄             ABOUT ME
-    ▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓            ${config.name}
-   ▓▓     ▓▓▓    ▐▓▓    ▐▓▓     ▓▓           <u><a href="${config.resume_url}" target="_blank">resume</a></u>
-▐▓▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▓       爵 <u><a href="${config.gui_url}" target="_blank">${config.gui_name}</a></u> (alt web)
-▐▓                                 ▐▓       -----------
-▐▓     + D O A K . S T U D I O +   ▐▓        CONTACT 
-▐▓                                 ▐▓        <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
-▐▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓        <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
-   ▓▓      ▐▓▓    ▓▓    ▐▓▓     ▓▓           <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
-    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓           -----------
-      ▓▓▓   ▐▓▓   ▓▓   ▓▓▓   ▓▓▀             FEATURED WORK 
-        ▀▓▓▄▄ ▀▓▓▄▓▓▄▓▓▓▄▄▓▓▀                <u><a href="${config.projects.project1_github}" target="_blank">${config.projects.project1_name}</a></u>
-            ▀▓▓▓▓▓▓▓▓▓▓▓▀▀                   <u><a href="${config.projects.project2_github}" target="_blank">${config.projects.project2_name}</a></u>
-                                             <u>mern-app_placeholder</u>
+                                       
+                                       
+               
+         #                                 
+         %@%       
+         %@@@   __|/_
+          %@%_ |▓▓▓▓▓|                         
+            /▓▓▓▓▓▓▓▓▓▓▓▓|             
+          /▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓|         
+        /▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓|       
+      /▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓|      
+    ▓▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▓        
+    ▓  + D O A K . S T U D I O + ▓    
+    ▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓     
+       |▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓/       
+         |▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓/        
+           |▓▓▓▓▓▓▓▓▓▓▓▓▓▓/           
+                |▓▓▓▓/
+                
+                
+‘sumfetch’
+
+ ABOUT
+------------------------------
+ $ ~${config.name}
+ <u><a href="${config.resume_url}" target="_blank">resume</a></u>
+爵 <u><a href="${config.gui_url}" target="_blank">${config.gui_name}</a></u>
+
+ CONTACT 
+------------------------------
+ <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
+ <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
+ <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
+
+ FEATURED WORK
+------------------------------
+ <u><a href="${config.projects.project1_github}" target="_blank">${config.projects.project1_name}</a></u>
+ <u><a href="${config.projects.project2_github}" target="_blank">${config.projects.project2_name}</a></u>
+ <u>mern-app_placeholder</u>
 
 `;
 };

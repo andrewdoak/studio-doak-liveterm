@@ -44,3 +44,11 @@ TAGGED
 `,
   };
 };
+
+/* 
+QUOTABLE GITHUB
+https://github.com/lukePeavey/quotable
+
+QUOTABLE SANDBOX
+https://www.postman.com/quotable/workspace/quotable/request/2817454-e91e7177-64bc-4545-9f9a-f9a2191ed82e
+*/

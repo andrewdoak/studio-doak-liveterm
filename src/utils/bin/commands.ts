@@ -36,38 +36,42 @@ ${c}\n
 
 // Repo
 export const repo = async (args: string[]): Promise<string> => {
-  window.open(`${config.repo}`);
-  return `opening this site's github repo in a new tab...`;
+  setTimeout(function () {
+    window.open(`${config.repo}`, `_blank`);
+  }, 1750);
+  return `repository '${config.liveterm_url}' loading...`;
 };
 
 // AboutMe
 export const about = async (args: string[]): Promise<string> => {
   return `
-HI!
----
+HELLO!
+-------
 i'm ${config.name}. 
 thanks for stopping by!
 
 GET TO KNOW ME
 ---------------
-'sumfetch' - for a short summary.
-'readme' - for my github readme.
+'sumfetch' - for a summary.
+'readme' - for more about me.
 'resume' - for my latest resume.
-'gui' - or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.gui_url}" target="_blank">here</a></u> for a traditional site. 
 `;
 };
 
 // gui (static site)
 export const gui = async (args: string[]): Promise<string> => {
-  window.open(`${config.gui_url}`);
-
-  return `opening gui site...`;
+  setTimeout(function () {
+    window.open(`${config.gui_url}`, `_blank`);
+  }, 1300);
+  return `gui loading...`;
 };
 
 // Resume
 export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`);
-  return 'opening resume...';
+  setTimeout(function () {
+    window.open(`${config.resume_url}`, `_blank`);
+  }, 1300);
+  return 'resume loading...';
 };
 
 // Donate
@@ -84,22 +88,32 @@ MY_DONATION_URLS
 
 // Email
 export const email = async (args: string[]): Promise<string> => {
-  window.open(`mailto:${config.email}`);
-  return `opening default email app... email me at: ${config.email}...`;
+  setTimeout(function () {
+    window.open(`mailto:${config.email}`, `_blank`);
+  }, 2250);
+  return `you can reach me at: ${config.email}... 
+email loading...`;
 };
 
 // GitHub
 export const github = async (args: string[]): Promise<string> => {
-  window.open(`https://github.com/${config.social.github}/`);
-
-  return `opening my github... [let's build something great together!]`;
+  setTimeout(function () {
+    window.open(`https://github.com/${config.social.github}/`, `_blank`);
+  }, 2250);
+  return `let's build something great together!
+github.com/${config.social.github} loading...`;
 };
 
 // LinkedIn
 export const linkedin = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
-
-  return `opening my linkedin... [i'd love to ‘link up’ with you! ;)]`;
+  setTimeout(function () {
+    window.open(
+      `https://www.linkedin.com/in/${config.social.linkedin}/`,
+      `_blank`,
+    );
+  }, 2250);
+  return `linkedin loading...
+i'd love to ‘link up’! ;)`;
 };
 
 // Google Search
@@ -208,7 +222,7 @@ nor directories in here
 did you try cd? 
 
 ¯|_(ツ)_|¯
-— a haiku, by terminal
+— a haiku, by the-terminal
 `;
 };
 
@@ -218,7 +232,7 @@ export const cd = async (args: string[]): Promise<string> => {
 i can't afford more directories.
 if you'd like to help with that...
 
-($)
+...$
 
 type 'donate'`;
 };
@@ -250,11 +264,17 @@ export const date = async (args: string[]): Promise<string> => {
 
 // sudo command
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open(
-    'https://youtu.be/otCpCn0l4Wo?si=6BaITde4Y3RSzIQX&t=14',
-    '_blank',
-  );
-  return `permission denied. you can't touch this!`;
+  // window.open(
+  //   '',
+  //   '_blank',
+  // );
+  setTimeout(function () {
+    window.open(
+      `https://youtu.be/otCpCn0l4Wo?si=6BaITde4Y3RSzIQX&t=14/`,
+      `_blank`,
+    );
+  }, 1250);
+  return `permission denied...you can't touch this!`;
 };
 // Opens to MC Hammer: Can't Touch This
 // Formerly opened to Rick Roll
@@ -277,22 +297,26 @@ export const banner = (args?: string[]): string => {
 ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║
 ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
 ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ 
-<u><a class="text-light-blue dark:text-dark-blue underline" href="${config.gui_url}" target="_blank">${config.gui_name} (alternative site)</a></u>
+
+<u><a class="text-light-blue dark:text-dark-blue underline" href=${config.gui_url} target="_blank">${config.gui_name}.gui</a></u>
                                               
 
-COMMANDS
----------
+
+QUICKSTART
+-----------
 type 'help' to see a list of commands.
-type 'about' for a brief hello.
-type 'sumfetch' to display summary.
+type 'sumfetch' for a summary.
+type 'about' for a bio.
+
+type 'gui' for an alternative version.
 type 'repo' for this site's repo.
-type 'gui' (or click above) to open 
-an alternative web presence.
+
 
 CREDITS
 --------
 doak.studio stands on 
 the shoulders of <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo_liveterm}" target="_blank">liveterm</a></u>.
+
 thank you, liveterm!
 
 `;

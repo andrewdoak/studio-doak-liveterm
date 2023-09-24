@@ -3,6 +3,7 @@
   "title": "DOAK.STUDIO",
   "name": "andrew_doak",
   "ascii": "doak.studio",
+  "liveterm_url": "liveterm.doak.studio",
   "gui_url": "https://bio.site/doak.studio",
   "gui_name": "doak.studio",
   "social": {
@@ -12,7 +13,7 @@
   "email": "mrandrewdoak@gmail.com",
   "ps1_hostname": "doak.studio",
   "ps1_username": "honored-guest",
-  "repo": "https://github.com/andrewdoak/doakstudios-liveterm",
+  "repo": "https://github.com/andrewdoak/liveterm.doak.studio",
   "repo_liveterm": "https://github.com/Cveinnt/LiveTerm",
   "resume_url": "https://github.com/andrewdoak/doak.studio/blob/main/andrew-doak_resume.pdf",
   "donate_urls": {

@@ -28,6 +28,7 @@ type 'gui' to redirect.
 ====> ${config.gui_name} <====
 =======================
 
+
 COMMANDS
 ---------
 ${c}\n
@@ -48,16 +49,18 @@ export const repo = async (args: string[]): Promise<string> => {
 // AboutMe
 export const about = async (args: string[]): Promise<string> => {
   return `
-HELLO!
--------
+HI!
+----
 i'm ${config.name}. 
 thanks for stopping by!
+
 
 GET TO KNOW ME
 ---------------
 'sumfetch' - for a summary.
-'bio' - for more about me.
-'resume' - for my latest resume.
+'bio' - for more details.
+'resume' - for my resume.
+
 `;
 };
 
@@ -125,7 +128,7 @@ export const google = async (args: string[]): Promise<string> => {
   if (!google) {
     return `usage: google [your search]  
 example: ‘google haikus on food’
-result of use: opens google [your search] in a new tab`;
+trigger: opens google [your search] in a new tab`;
   }
   window.open(`https://google.com/search?q=${args.join(' ')}`);
   return `searching google for ‘${args.join(' ')}’...`;
@@ -145,7 +148,7 @@ export const duckduckgo = async (args: string[]): Promise<string> => {
   if (!duckduckgo) {
     return `usage: duckduckgo [your search]  
 example: ‘duckduckgo why use duckduckgo’
-result of use: opens duckduckgo [your search] in a new tab`;
+trigger: opens duckduckgo [your search] in a new tab`;
   }
   window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
   return `searching duckduckgo for ‘${args.join(' ')}’...`;
@@ -164,7 +167,7 @@ export const bing = async (args: string[]): Promise<string> => {
   if (!bing) {
     return `usage: bing [your search]  
 example: ‘bing why use bing’
-result of use: opens bing [your search] in a new tab`;
+trigger: opens bing [your search] in a new tab`;
   }
   window.open(`https://bing.com/search?q=${args.join(' ')}`);
   return `searching bing for “${args.join(' ')}”...`;
@@ -183,7 +186,7 @@ export const reddit = async (args: string[]): Promise<string> => {
   if (!reddit) {
     return `usage: reddit [your search]  
 example: ‘reddit lifeprotips’
-result of use: opens reddit [your search] in a new tab`;
+trigger: opens reddit [your search] in a new tab`;
   }
   window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
   return `searching reddit for ‘${args.join(' ')}’...`;
@@ -310,18 +313,16 @@ QUICKSTART
 type 'help' to see a list of commands.
 type 'sumfetch' for a summary.
 type 'about' for an introduction.
-'bio' - for more about me.
-
-type 'gui' for an alternative version.
+type 'bio' for more details.
 type 'repo' for this site's repo.
+type 'gui' for an alternative site.
 
 
 CREDITS
 --------
-doak.studio stands on 
-the shoulders of <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo_liveterm}" target="_blank">liveterm</a></u>.
-
-thank you, liveterm!
+doak.studio stands on the
+shoulders of <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo_liveterm}" target="_blank">liveterm</a></u>.
+thank you!
 
 `;
 };

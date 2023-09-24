@@ -8,28 +8,31 @@ export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
   var c = '';
   for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
-    if (i % 7 === 0) {
+    if (i % 4 === 0) {
       c += Object.keys(bin).sort()[i - 1] + '\n';
     } else {
-      c += Object.keys(bin).sort()[i - 1] + ' ';
+      c += Object.keys(bin).sort()[i - 1] + ' ' + ' ';
     }
   }
   return `
 WELCOME
 --------
-to doak.studio :)
+to ${config.liveterm_url}:$ ~ hello
 
 QUICKSTART
 -----------
-type 'about' for a brief hello and more tips.
-type 'sumfetch' to display a brief summary.
-type 'gui' to open an alternative web presence.
+type 'about' for a quick hello.
+type 'sumfetch' for a summary.
+type 'gui' to redirect. 
+=======================
+====> ${config.gui_name} <====
+=======================
 
 COMMANDS
 ---------
 ${c}\n
 [tab]: trigger completion.
-[ctrl+l]/clear: clear terminal.
+[ctrl+l] / clear: clear terminal.
 
 `;
 };
@@ -53,7 +56,7 @@ thanks for stopping by!
 GET TO KNOW ME
 ---------------
 'sumfetch' - for a summary.
-'readme' - for more about me.
+'bio' - for more about me.
 'resume' - for my latest resume.
 `;
 };
@@ -76,10 +79,10 @@ export const resume = async (args: string[]): Promise<string> => {
 
 // Donate
 export const donate = async (args: string[]): Promise<string> => {
-  return `so grateful for your support...
+  return `...i'm so grateful for your support!
 
-MY_DONATION_URLS
------------------
+DONATE @
+---------
 - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
 - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.cashapp}" target="_blank">cashapp</a></u>
 
@@ -306,7 +309,8 @@ QUICKSTART
 -----------
 type 'help' to see a list of commands.
 type 'sumfetch' for a summary.
-type 'about' for a bio.
+type 'about' for an introduction.
+'bio' - for more about me.
 
 type 'gui' for an alternative version.
 type 'repo' for this site's repo.

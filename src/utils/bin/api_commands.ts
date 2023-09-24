@@ -12,14 +12,15 @@ export const projects = async (args: string[]): Promise<string> => {
   return projects
     .map(
       (repo) =>
-        `summary: ${repo.description}
-repo: <a class="text-light-blue dark:text-dark-blue underline" href="${repo.html_url}" target="_blank">${repo.full_name}</a>
-web: ${repo.homepage}
-tags: # ${repo.topics}\n 
+        `project. ${repo.description}
+repo.    <u><a class="text-light-blue dark:text-dark-blue underline" href="${repo.html_url}" target="_blank">${repo.full_name}</a></u>
+web.     <u><a class="text-light-blue dark:text-dark-blue underline" href="${repo.homepage}" target="_blank">${repo.homepage}</a></u>
 `,
     )
     .join('\n');
 };
+// tags: # ${repo.topics}
+// TODO: need comma separation
 
 export const quote = async (args: string[]): Promise<string> => {
   const data = await getQuote();

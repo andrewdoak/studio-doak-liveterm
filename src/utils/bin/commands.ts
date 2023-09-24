@@ -304,7 +304,7 @@ export const banner = (args?: string[]): string => {
 ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
 ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ 
 
-<u><a class="text-light-blue dark:text-dark-blue underline" href=${config.gui_url} target="_blank">${config.gui_name}.gui</a></u>
+<u><a class="text-light-blue dark:text-dark-blue underline" href=${config.gui_url} target="_blank">=> [${config.gui_name}] gui</a></u>
                                               
 
 
@@ -320,9 +320,8 @@ type 'gui' for an alternative site.
 
 CREDITS
 --------
-doak.studio stands on the
-shoulders of <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo_liveterm}" target="_blank">liveterm</a></u>.
-thank you!
+[${config.liveterm_url}] stands on 
+the shoulders of <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo_liveterm}" target="_blank">liveterm</a></u>. thank you!
 
 `;
 };

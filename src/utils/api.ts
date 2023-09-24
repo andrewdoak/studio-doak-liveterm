@@ -39,7 +39,8 @@ QUOTE
 
 TAGGED
 ------- 
-# ${data.tags}
+
+#${data.tags}}
 
 `,
   };

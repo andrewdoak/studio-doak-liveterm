@@ -320,8 +320,8 @@ type 'gui' for an alternative site.
 
 CREDITS
 --------
-[${config.liveterm_url}] stands on 
-the shoulders of <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo_liveterm}" target="_blank">liveterm</a></u>. thank you!
+${config.title} stands on 
+the shoulders of <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo_liveterm}" target="_blank">LiveTerm</a></u>.
 
 `;
 };

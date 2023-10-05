@@ -245,7 +245,7 @@ type 'donate'`;
 
 // date command
 export const date = async (args: string[]): Promise<string> => {
-  return `date.time_now: ${new Date().toLocaleString()}`;
+  return `the current date is: ${new Date().toLocaleString()}`;
 };
 
 // vi command

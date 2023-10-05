@@ -10,7 +10,7 @@
     "github": "andrewdoak",
     "linkedin": "doak-andrew"
   },
-  "email": "mrandrewdoak@gmail.com",
+  "email": "andrew@doak.studio",
   "ps1_hostname": "doak.studio",
   "ps1_username": "honored-guest",
   "repo": "https://github.com/andrewdoak/liveterm.doak.studio",
@@ -22,12 +22,15 @@
     "patreon": "https://patreon.com"
   },
   "projects": {
-    "project1_name": "game_match-the-number",
+    "project1_name": "match that number",
     "project1_github": "https://github.com/andrewdoak/p5js-matching-game",
     "project1_live": "https://andrewdoak.github.io/p5js-matching-game/",
-    "project2_name": "react-app_virtual-museum",
+    "project2_name": "virtual museum",
     "project2_github": "https://github.com/andrewdoak/aic-api-react",
-    "project2_live": "https://aic-api-react.netlify.app/"
+    "project2_live": "https://aic-api-react.netlify.app/",
+    "project3_name": "the vegetalist",
+    "project3_github": "https://github.com/andrewdoak/thevegetalist",
+    "project3_live": "the-vegetalist.onrender.com/"
   },
   "colors": {
     "light": {

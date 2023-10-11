@@ -26,9 +26,9 @@ const sumfetch = async (args: string[]): Promise<string> => {
 
  ABOUT
 ------------------------------
- $ ~${config.name}
+ $ ~${config.name} (that's me)
  <u><a href="${config.resume_url}" target="_blank">resume</a></u>
-爵 <u><a href="${config.gui_url}" target="_blank">${config.gui_name}</a></u>
+爵 <u><a href="${config.gui_url}" target="_blank">${config.gui_name} (gui)</a></u>
 
  CONTACT 
 ------------------------------
@@ -40,7 +40,7 @@ const sumfetch = async (args: string[]): Promise<string> => {
 ------------------------------
  <u><a href="${config.projects.project1_github}" target="_blank">${config.projects.project1_name}</a></u>
  <u><a href="${config.projects.project2_github}" target="_blank">${config.projects.project2_name}</a></u>
- <u>mern-app_placeholder</u>
+ <u><a href="${config.projects.project3_github}" target="_blank">${config.projects.project3_name}</a></u>
 
 `;
 };

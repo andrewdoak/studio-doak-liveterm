@@ -304,7 +304,7 @@ export const banner = (args?: string[]): string => {
 ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
 ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ 
 
-<u><a class="text-light-blue dark:text-dark-blue underline" href=${config.gui_url} target="_blank">=> [${config.gui_name}] gui</a></u>
+<u><a class="text-light-blue dark:text-dark-blue underline" href=${config.gui_url} target="_blank">${config.gui_name} (gui)</a></u>
                                               
 
 
